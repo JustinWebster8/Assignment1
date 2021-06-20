@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Webster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+<nav>
+ <div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>
+   <ul>
+     <li><a href="index.htm">HOME</a></li>
+     <li><a href="job.htm">JOB</a></li>
+     <li><a href="profile.htm">PROFILE</a></li>
+     <li><a href="project.htm">PROJECT</a></li>
+</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Upcoming Project</h1><br>
+<h3 style="color:white;">Overview</h3>
+<p style="color:white;">My project idea is to design a tool that can read AFL player statistics from a database and present them in an easy to read format to help Fantasy football players. The stats would include disposals, goals and fantasy points for each game and these will be presented in a line graph. The second display will be a boxplot which shows quartiles. The reason for the box plot is that currently the best available gauge is a player’s average which is not always an accurate representation. Users will also be able to filter the data they are looking at by venue and opponent to make the data and analysis more specific.
+</p>
+<h3 style="color:white;">Motivation</h3>
+<p style="color:white;">There are 128,725 teams registered in AFL Fantasy in 2021. This number does not include players of other formats such as SuperCoach and Draftstars. These players are fanatical and despite this there are no good tools for researching and making decisions when it comes to creating a team and making trades. There is one which is $20 per year and all it does is show averages and give breakevens which are readily available on the internet. Given the fanatical nature of these players and the winning prize being a car I think that a much better tool could be made and it would be popular with players.</p>
+<h3 style="color:white;">Description</h3>
+<p style="color:white;">AFL Fantasy is a numbers game. You have a set amount of money to make a team at the start of the season and players score points based on their stats. Player prices fluctuate week to week based on their performance as well so a strategy that is required to win is to pick players when they are expected to rise in price and trade players out when they are about to drop in price. There are head to head leagues which people run with their friends for cash and the person that has the highest overall score for the year will win a car.</p>
+<p style="color:white;">The primary purpose of this app is to have a simple visual aid to help make the decisions required. The addition of filters to view more specific data can really allow someone to get a leg up on their opponent if they do get it right. I envision this as a database which is updated weekly with the player statistics and also feeds into a UI which displays the data as easy to read graphs. Ideally, there would also be commentary displayed based on the stats such as “Player X has never kicked less than 3 goals when playing against Team Y” or “Player X usually struggles against team Y with only 1 score over 90 in 7 games”. Further to this, and this is an option which presents the biggest challenge, we could have a bot that makes suggestions on which players are due to have some good or bad form. I will dot point and give a brief description of the possible features below.</p>
+<h3 style="color:white;">Features</h3>
+<p style="color:white;">
+Score and stats analysis – As described above. Visual aids to help select players for your team.<br>
+Team Sheets – Primarily to be used in the pre season. This tool will allow players to pick teams and play around with them before the season starts without having to change their actual team.<br>
+News updates – Fantasy relevant news updates from AFL clubs such as injuries, potential debuts, role changes and training reports.<br>
+Best 22 on form – A team that updates each week with the players in each position with the highest scores in the last 3 rounds. A quick reference guide.<br>
+Bunnies – A section which details the players that always have great games against certain teams.<br>
+Kryptonite – A section which details the players that always perform poorly against certain teams.<br>
+Captain suggestions – Captains earn double points so a section that outlines the players best placed to get huge scores each week would be required reading for anyone that wants to really win a car.<br>
+</p>
+</section>
+
+<!------job------>
+
+<section class="me">
+
+<div class="row">
+ <div class="me-col">
+ 
+<h3>Tools & Tech</h3>
+<p>Microsoft Excel can store and present the data the way that I want. I need to determine if there is a tool that can read the data and present it in a user friendly UI with appropriate menus and filtering options or if it is possible to code something like this. Whether there are any security issues with storing the data in Excel is another question.
+If Excel is not a viable option this idea could require building our own database and UI from scratch.</p>
+
+<h3>Skills Required</h3>
+<p>
+<ul>
+<dt>Coding due to having to build the tool from the ground up.</dt>
+<dt>Analytics to provide the commentary around the insights that I would like to be shown.</dt>
+<dt>Automation so that we can have the data update itself every week rather than manually entering the stats of 400 players every Sunday night so that the app is fully functional all week for users</dt>
+<dt>Security as players will probably have to enter some kind of details to be able to use the tool. This data needs to be protected for privacy reasons.</dt>
+<dt>Mobile app development and web development so that we can have a web based version and a phone version.</dt>
+<dt>Testing so that we can identify bugs before releasing to the public.</dt>
+</ul>
+</p>
+<p>I think that most of these aren’t too much of an issue to learn with materials that are available online. Security is something that I wouldn’t want to take risks with so professional advice or services may be required.</p>
+<h3>Outcome</h3>
+<p>The finished product would be a subscription service or free service with ads. I think because there is nothing like this on the market at the moment it will be very popular very quickly. I would set the release date to be around January in whichever year it is ready so that there is plenty of time for word to spread before the AFL season starts. I can also see this being used by punters so the market may actually be larger than initially intended.</p>
+</div>
+
+</section>
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+navLinks.style.right = "0"
+}
+function hideMenu(){
+navLinks.style.right = "-200px"
+}
+
+</script>
+</body>
+</html>

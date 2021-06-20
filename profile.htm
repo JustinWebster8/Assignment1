@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Webster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="sub-header">
+<nav>
+ <div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>
+   <ul>
+     <li><a href="index.htm">HOME</a></li>
+     <li><a href="job.htm">JOB</a></li>
+     <li><a href="profile.htm">PROFILE</a></li>
+     <li><a href="project.htm">PROJECT</a></li>
+</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Personal Profile</h1>
+<img src="images/name.png" style="width:500px;height:600px;">
+
+</section>
+
+<!------job------>
+
+<section class="me">
+
+<div class="row">
+ <div class="me-col">
+ 
+<p>First of all, the 16 Personalities and BigFive tests are uncanny in their accuracy. They capture both my logical nature and my laid back attitude. Some of the details that they revealed are incredibly spot on. For example an email I received from 16 Personalities states that I am more productive in the evening than in the morning, I can get immersed in things and forget to eat and drink, I believe the media is biased and that I often daydream. 
+</p>
+<p>As the results confirm what I already know about myself I don’t think the results themselves influence my behaviour in a team. Generally, I am someone who will let someone else take the lead if they wish but I can step up and lead if required. My laid back attitude allows me to get along with most people and I guess because of my laid back attitude and general curiosity of all subjects I would be someone who is happy to work on my own project idea but also happy to work on other people’s. This is especially true as I can often see other people’s point of view so I think that I might actually be a big fan of someone else’s idea. I tend to think a lot more than I speak and in my current team at work I am known as someone who doesn’t speak often but has something valuable to say when I do.</p>
+<p>I think the two main challenges I need to look out for when working in a group are the people that talk a lot but have no idea and also people who talk but don’t deliver. I don’t care if my team members are awesome and get all their work done or if they are useless and do absolutely nothing, as long as they are consistent so I know what to expect. I am a very flexible person that is comfortable letting other people play the roles that they want and I can fill the gaps so I think I will be comfortable in any team and hopefully my team members see me as a valuable asset.</p>
+<ul>
+<dt><a href="https://www.16personalities.com/intp-personality">16Personalities-Logician</a></dt>
+<dt><a href="http://www.learningstylequiz.com/quiz/results/Visual-ISTP/26446">Learning Style-Visual</a></dt>
+<dt><a href="https://bigfive-test.com/result/60cea07d63855f00054dadaf">BigFive</a></dt>
+
+</ul>
+</div>
+
+</section>
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+navLinks.style.right = "0"
+}
+function hideMenu(){
+navLinks.style.right = "-200px"
+}
+
+</script>
+</body>
+</html>

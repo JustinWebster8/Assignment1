@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Webster</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+<body>
+<section class="header">
+<nav>
+ <div class="nav-links" id="navLinks">
+  <i class="fa fa-times" onclick="hideMenu()"></i>
+   <ul>
+     <li><a href="index.htm">HOME</a></li>
+     <li><a href="job.htm">JOB</a></li>
+     <li><a href="profile.htm">PROFILE</a></li>
+     <li><a href="project.htm">PROJECT</a></li>
+</ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+
+<div class="text-box">
+<h1>Justin Webster</h1>
+<p>Just a simple man trying to make his way through Introduction to Information Technology</p>
+
+</div>
+</section>
+
+
+<!------Me------>
+
+<section class="me">
+<h1>About Me</h1>
+
+<div class="row">
+ <div class="me-col">
+ 
+<p>
+My name is Justin Webster. I am 28 and I have lived in Adelaide my whole life. My Dad’s side of the family is German and came to Australia sometime in the 1800’s and my Mum’s side is from England and came here in the 1960’s. I can speak a little bit of German that I learned at school and I have just started learning Spanish. Finishing high school is the furthest I have gone with my education and I am currently weighing up whether a Bachelor of Information Technology or a Bachelor of Business would be more interesting and more beneficial to me.<br>
+<br>I am a father of 3 kids aged 9, 7 and 3 months. My interests are spending time with family, hanging out with my mates, AFL Footy, cooking, DIY, reading, video games, Star Wars, golf and a wide variety of music (heavy metal and rap would be my favourite genres). <br>
+<br>Speaking of music, I was once absolutely star struck! I went to an Eminem concert in Sydney and afterwards we were at a nightclub. We were in an elevator about to head up to the roof when a guy behind us said in an American accent “Yo, there’s a fire hazard don’t go up”. I turned around and there was Kendrick Lamar and his crew. I was too star struck to even ask for a picture. I just gaped and pointed at him as his security told us that we needed to get another elevator.
+</p>
+</div>
+<div class="me-col">
+   <h3>Interest in IT</h3>
+<p>
+Like a lot of people my age my interest in IT initially began with gaming. I have been an avid gamer ever since I first played the PS1 with my Dad. My Uncle was actually the big driving force behind both my interest in gaming and my interest in IT. He essentially gave me a history lesson by showing me old systems such as Atari, SNES, NES and he was also responsible for showing me some of my favourite games such as Halo, KOTOR, Morrowind and Total War (Total War was played on a computer that we had built together). <br>
+<br>Obviously I had a lot of fun with technology so my experiences only drove the interest as far as being a hobby. It has only been in the last couple of years that I have realised the power of IT in problem solving and this is what has driven my renewed interest. For example I work in a highly collaborative environment where the team members constantly need to update the same Excel spreadsheet. We had issues with sheets locking and macros not running properly in critical data sheets. I knew from previous experience that there was a way that we could use the spreadsheets at the same time using SharePoint without them locking and also implement a pass/fail system for our records that could then be exported to Excel. Even though I had the idea of the end product in mind, I had no idea how to build it so I had to get some help from a Business Analyst. Experiences like this are why I want to learn more about IT. Learning more about IT will allow me to solve more problems and be more efficient and independent which will also open more doors for me in the future.
+</p>
+</div>
+<div class="me-col">
+   <h3>RMIT</h3>
+<p>
+I chose RMIT purely because this course was easy to find on OUA and the single subject offerings. As I stated earlier I am weighing up whether this or a Business degree is a better option for me so I didn’t want to commit to a Bachelor and then have to transfer later. After this course I will try a business topic or two with UniSA to test the water.<br>
+<br>If I was to enrol in the Bachelor of Information Technology I would expect to learn a little bit of everything from Networking to Artificial Intelligence. However, I would expect electives at the back end of the degree to allow us to delve deeper into topics of interest. For me at the moment these would be data and storage, networking, AI and programming languages. Programming is a major interest because I think it can be the key to solving many problems. I also have a few ideas for apps that I would like to create and obviously programming them would be a good start in making the ideas reality. 
+</p>
+</div>
+</section>
+
+
+
+
+
+
+</section>
+
+
+<!--------JavaScript for Toggle Menu------->
+<script>
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+navLinks.style.right = "0"
+}
+function hideMenu(){
+navLinks.style.right = "-200px"
+}
+
+</script>
+</body>
+</html>
